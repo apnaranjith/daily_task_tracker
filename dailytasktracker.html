@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-image: url("./pexels-pixabay-268533.jpg");
+
+            background-size : cover;
+            background-attachment:fixed;
+    
+        }
+        div{
+            color:black;
+            border-radius:4px;
+        }
+        
+    </style>
+</head>
+<body >
+    <div></div>
+<div></div>
+    <script>
+    
+    var div1=document.getElementsByTagName("div");
+    var ip1=document.createElement("input");
+    var aa=new Audio("we.mp3");
+    
+    var ip2=document.createElement("input");
+    var bb=new Audio("monaxil(1).mp3");
+    
+    
+    ip1.type="checkbox";
+    ip2.type="checkbox";
+     console.log(ip1.checked);
+     console.log(ip2.checked);
+
+ip1.addEventListener("click",function(){
+    
+    setTimeout(function(){
+            div1[0].style.display="none";
+        },7000)
+        
+    aa.play();
+        
+    
+   
+})
+ip2.addEventListener("click",function(){
+    setTimeout(function(){
+            div1[1].style.display="none";
+        },6000)
+    bb.play();
+        
+})
+     
+
+    div1[0].style.height="80px";
+        div1[0].style.width="500px";
+       // div1[0].style.border="5px solid black";
+        div1[1].style.height="80px";
+        div1[1].style.width="500px";
+        //div1[1].style.border="5px solid black";
+        div1[1].style.backgroundColor="#FFF5CD";
+        div1[0].style.backgroundColor="#FFF5CD";
+        div1[0].style.margin="100px";
+        div1[0].style.transform="translateX(500px)";
+
+        div1[1].style.margin="100px";
+        
+        div1[0].innerHTML="hey!!U had multivitamin<br>";
+        
+        div1[1].innerHTML="hey!!U had MONAXIL<br>";
+
+        div1[0].append(ip1); 
+        div1[1].append(ip2); 
+        
+
+
+        
+    
+
+       
+    </script>
+</body>
+</html>
